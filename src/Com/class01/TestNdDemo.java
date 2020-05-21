@@ -13,7 +13,6 @@ public class TestNdDemo { // print alphabetic order of Test Names
 		System.out.println("Step 2");
 		System.out.println("Step 3");	
 	}
-	
 
 	@Test // if we use that annotation we need to import//add a testNG library
 	      // we need to inport test annotation
@@ -22,8 +21,6 @@ public class TestNdDemo { // print alphabetic order of Test Names
 		System.out.println("Test Case 2");
 		
 	}
-	
-	
 
 	@Test  
 	public void testThree() {
@@ -31,11 +28,6 @@ public class TestNdDemo { // print alphabetic order of Test Names
 		System.out.println("Test Case  3");
 		
 	}
-	
-	
-	
-	
-	
 	
 
 }

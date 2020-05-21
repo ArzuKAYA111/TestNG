@@ -14,8 +14,9 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class TaskTwo {
-
+public class TaskTwo {// BeforeClass execute at first and only one time and AfterClass will execute at the end and only one time
+                       //BeforeMethod will execute before for each test cases(@Test) ,AfterMethod will execute after for each test cases
+	                   
 	@Test
 	public void firstTest() {
 		System.out.println("Hi, I am a first test");
@@ -24,6 +25,10 @@ public class TaskTwo {
 	@Test
 	public void secondTest() {
 		System.out.println("Hi, I am a second test");
+	}
+	@Test
+	public void secondThree() {
+		System.out.println("Hi, I am a third test");
 	}
 
 	@BeforeMethod

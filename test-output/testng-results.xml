@@ -1,45 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-05-19T19:06:18 CDT" name="Default suite" finished-at="2020-05-19T19:06:18 CDT" duration-ms="125">
+  <suite started-at="2020-05-20T23:59:45 CDT" name="Default suite" finished-at="2020-05-20T23:59:45 CDT" duration-ms="94">
     <groups>
     </groups>
-    <test started-at="2020-05-19T19:06:18 CDT" name="Default test" finished-at="2020-05-19T19:06:18 CDT" duration-ms="125">
-      <class name="Com.class01.TaskTwo">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:Com.class01.TaskTwo@6e75aa0d]" started-at="2020-05-19T19:06:18 CDT" name="beforeClass" finished-at="2020-05-19T19:06:18 CDT" duration-ms="16" status="PASS">
+    <test started-at="2020-05-20T23:59:45 CDT" name="Default test" finished-at="2020-05-20T23:59:45 CDT" duration-ms="94">
+      <class name="Com.class01.TitleLogoLoginValidation">
+        <test-method is-config="true" signature="OpenAndNavigate()[pri:0, instance:Com.class01.TitleLogoLoginValidation@11a9e7c8]" started-at="2020-05-20T23:59:45 CDT" name="OpenAndNavigate" finished-at="2020-05-20T23:59:45 CDT" duration-ms="16" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Com.class01.TaskTwo@6e75aa0d]" started-at="2020-05-19T19:06:18 CDT" name="beforeMethod" finished-at="2020-05-19T19:06:18 CDT" duration-ms="1" status="PASS">
+        </test-method> <!-- OpenAndNavigate -->
+        <test-method signature="TitleValidation()[pri:0, instance:Com.class01.TitleLogoLoginValidation@11a9e7c8]" started-at="2020-05-20T23:59:45 CDT" name="TitleValidation" finished-at="2020-05-20T23:59:45 CDT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="firstTest()[pri:0, instance:Com.class01.TaskTwo@6e75aa0d]" started-at="2020-05-19T19:06:18 CDT" name="firstTest" finished-at="2020-05-19T19:06:18 CDT" duration-ms="18" status="PASS">
+        </test-method> <!-- TitleValidation -->
+        <test-method is-config="true" signature="OpenAndNavigate()[pri:0, instance:Com.class01.TitleLogoLoginValidation@11a9e7c8]" started-at="2020-05-20T23:59:45 CDT" name="OpenAndNavigate" finished-at="2020-05-20T23:59:45 CDT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- firstTest -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Com.class01.TaskTwo@6e75aa0d]" started-at="2020-05-19T19:06:18 CDT" name="afterMethod" finished-at="2020-05-19T19:06:18 CDT" duration-ms="1" status="PASS">
+        </test-method> <!-- OpenAndNavigate -->
+        <test-method signature="ValidLogin()[pri:0, instance:Com.class01.TitleLogoLoginValidation@11a9e7c8]" started-at="2020-05-20T23:59:45 CDT" name="ValidLogin" finished-at="2020-05-20T23:59:45 CDT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="secondTest()[pri:0, instance:Com.class01.TaskTwo@6e75aa0d]" started-at="2020-05-19T19:06:18 CDT" name="secondTest" finished-at="2020-05-19T19:06:18 CDT" duration-ms="2" status="PASS">
+        </test-method> <!-- ValidLogin -->
+        <test-method signature="logoValidation()[pri:0, instance:Com.class01.TitleLogoLoginValidation@11a9e7c8]" started-at="2020-05-20T23:59:45 CDT" name="logoValidation" finished-at="2020-05-20T23:59:45 CDT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- secondTest -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Com.class01.TaskTwo@6e75aa0d]" started-at="2020-05-19T19:06:18 CDT" name="beforeMethod" finished-at="2020-05-19T19:06:18 CDT" duration-ms="0" status="PASS">
+        </test-method> <!-- logoValidation -->
+        <test-method is-config="true" signature="OpenAndNavigate()[pri:0, instance:Com.class01.TitleLogoLoginValidation@11a9e7c8]" started-at="2020-05-20T23:59:45 CDT" name="OpenAndNavigate" finished-at="2020-05-20T23:59:45 CDT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Com.class01.TaskTwo@6e75aa0d]" started-at="2020-05-19T19:06:18 CDT" name="afterMethod" finished-at="2020-05-19T19:06:18 CDT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:Com.class01.TaskTwo@6e75aa0d]" started-at="2020-05-19T19:06:18 CDT" name="afterClass" finished-at="2020-05-19T19:06:18 CDT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- Com.class01.TaskTwo -->
+        </test-method> <!-- OpenAndNavigate -->
+      </class> <!-- Com.class01.TitleLogoLoginValidation -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
