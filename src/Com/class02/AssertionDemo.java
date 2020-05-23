@@ -50,5 +50,7 @@ public class AssertionDemo extends CommonMethods {
 
 		// 2nd way
 		Assert.assertTrue(logoDisplayed, "Logo is not displayed");
+		
 	}
+	
 }

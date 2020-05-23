@@ -1,7 +1,6 @@
 package Com.class01;
 
-/* Task 1: Executing different test based TestNG
-annotations
+/* Task 2: Executing different test based TestNG annotations
 ● Create class that will have:
 ● Before and After Class annotation
 ● Before and After Method annotation

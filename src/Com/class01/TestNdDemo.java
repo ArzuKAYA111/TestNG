@@ -1,6 +1,6 @@
 package Com.class01;
 
-import org.testng.annotations.Test;
+import org.testng.annotations.Test;// Whenn we click on Test And right click than click on open decleration we can see all codes every things.Because of TestNG is open Source tool if don not we can not se codes etc.
 
 public class TestNdDemo { // print alphabetic order of Test Names 
 	
