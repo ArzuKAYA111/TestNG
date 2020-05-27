@@ -22,9 +22,9 @@ import Utils.CommonMethods;
 
 public class sauceDemoTask extends CommonMethods {
 
-	@BeforeMethod
+	@Test
 	public void NavigateToBrowser() {
-		setUp();
+
 		WebElement username = driver.findElement(By.id("user-name"));
 		username.sendKeys("standard_user");
 		WebElement password = driver.findElement(By.id("password"));
@@ -34,11 +34,11 @@ public class sauceDemoTask extends CommonMethods {
 		wait(2);
 	}
 
-	@AfterMethod
-	public void closeBrowser() {
-		wait(2);
-		tearDown();
-	}
+//	@AfterMethod
+//	public void closeBrowser() {
+//		wait(2);
+//		tearDown();
+//	}
 
 	@Test
 	public void verify() {

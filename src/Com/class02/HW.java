@@ -1,4 +1,5 @@
 package Com.class02;
+
 /* TC 1: HRMS Application Login:
 1. Open chrome browser
 2. Go to
@@ -25,26 +26,28 @@ import Utils.CommonMethods;
 import Utils.ConfigsReader;
 
 public class HW extends CommonMethods {
-
-	@BeforeMethod
-	public void openBrowserAndNavigate() {
-		setUp();
-	}
-
-	@AfterMethod
-	public void quitBrowser() {
-		tearDown();
-	}
-// 1st way
+//
+//	@BeforeMethod
+//	public void openBrowserAndNavigate() {
+//		setUp();
+//	}
+//
+//	@AfterMethod
+//	public void quitBrowser() {
+//		tearDown();
+//	}
+//     // 1st way
 	// @Test(dependsOnMethods = "invalidLogin" )
 	// 2nd way
 	// @Test(dependsOnMethods = { "invalidLogin" })
 	// depending on multiple methods
 	// @Test(dependsOnMethods = { "invalidLogin", "method2", "method3" })
 
-	@Test(priority = 2, dependsOnMethods = { "invalidLogin" })
+	@Test(priority = 1, dependsOnMethods = { "invalidLogin" })
+	
 	public void validLogin() {
-		// WebElement username = driver.findElement(By.id("txtUsername"));
+		
+// WebElement username = driver.findElement(By.id("txtUsername"));
 
 // 1st way
 		// username.sendKeys(ConfigsReader.getProperty("username"));
@@ -62,9 +65,10 @@ public class HW extends CommonMethods {
 		// wait.until(ExpectedConditions.elementToBeClickable(login.loginBtn));
 		// login.loginBtn.click();
 
-		// 2nd way
+// 2nd way
 		// waitForClickability(login.loginBtn);
 		// login.loginBtn.click();
+		
 // 3rd way
 		click(login.loginBtn);
 
@@ -77,25 +81,35 @@ public class HW extends CommonMethods {
 			System.out.println("Logo not is displayed");
 		}
 
- //1st way
-		try {
-			Thread.sleep(1000);
-		} catch (InterruptedException e) {
-			
-			e.printStackTrace();
-		}
+		// 1st way
+//		try {
+//			Thread.sleep(1000);
+//		} catch (InterruptedException e) {
+//
+//			e.printStackTrace();
+//		}
+		// 2nd way
 		wait(1);
-	}
-	// @Test means Test Case = Scenario = Test Method
-// Case 1: if this test method is commented, it will not run
-	// Depending method will throw an exception
-	// @Test(priority = 3, enabled = true)
 
-// Case 2: if this test method is disabled, it will not run
-	// Depending method will throw an exception
-	// @Test(priority = 3, enabled = false)
-	
-	@Test(priority = 3)
+	}
+
+	// @Test means Test Case = Scenario = Test Method
+		// Case 1: if this test method is commented, it will not run
+		// Depending method will throw an exception
+		// @Test(priority = 3, enabled = true)
+
+		// Case 2: if this test method is disabled, it will not run
+		// Depending method will throw an exception
+		// @Test(priority = 3, enabled = false)
+
+		// Case 3: if this test method fails, it will run but fail
+		// Depending method will not execute
+
+		// Case 4: if this test method passes, it will run and pass
+		// Depending method will execute
+
+
+	@Test(priority = 2)
 	public void invalidLogin() throws Exception {
 		LoginPageElements login = new LoginPageElements();
 		sendText(login.username, ConfigsReader.getProperty("username"));
@@ -117,10 +131,10 @@ public class HW extends CommonMethods {
 		} else {
 			System.out.println("Error msg is not displayed");
 		}
-wait(1);
+		wait(1);
 
 		// When the test fails an Exception is thrown
-		throw new Exception();
-	}}
-	
-
+	throw new Exception();    // BUNU eklediginde neden test fail oluyor ben tam olarak anlamadim anlayan yazabilir mi ?
+		
+	}
+}

@@ -23,7 +23,7 @@ public class TaskOne {
 		System.out.println("firstMethod");
 	}
 
-	@Test(enabled = false)
+	@Test(enabled = false) // Also we can commend it out (//) or delete the method same as enabled=false
 	public void firstMethod1() {
 		System.out.println("firstMethod1");
 	}
@@ -39,7 +39,7 @@ public class TaskOne {
 	}
 
 	@Test
-	public void fourthMethod() {
+	public void fourthMethod() { // By default it is periorty =o so it will execute first also we can say this is 1 others 2,3,4,
 		System.out.println("fourthMethod");
 	}
 }

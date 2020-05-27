@@ -1,17 +1,13 @@
 package HOMEWORK;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
 import Utils.CommonMethods;
 import Utils.ConfigsReader;
-
-/*
- * TC 1: HRMS Application Login:
+/* TC 1: HRMS Application Login:
 1. Open chrome browser
 2. Go to
 “http://166.62.36.207/humanresources/symfony/web/index.php/
@@ -41,9 +37,7 @@ public class LogoIsDisplayClass01 extends CommonMethods {
 	  
 	  
 	  WebElement login=driver.findElement(By.xpath("//input[@id='btnLogin']"))	;	
-		click(login);
-	  
-		
+		click(login);	
 	}
 	
 	@Test(dependsOnMethods="ValidLogIn")
@@ -51,8 +45,6 @@ public class LogoIsDisplayClass01 extends CommonMethods {
 		WebElement logo=driver.findElement(By.xpath("//img[@width='283']"));
 		logo.isDisplayed();
 	}
-	
-
 	
 	@AfterClass
 	public void close() {

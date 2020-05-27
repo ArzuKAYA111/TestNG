@@ -12,8 +12,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.UnexpectedTagNameException;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
-public class CommonMethods extends BaseClass {
+                               // TO SEE ALL METHODS  CNTRL  +  O 
+public class CommonMethods extends PageInitializer {
 
 /** 1-
  * 	Method That clears and Send Keys to All Text Boxes
@@ -23,12 +23,13 @@ public class CommonMethods extends BaseClass {
 		
 public static void sendText(WebElement element, String text) {
 			
-	// void is in valid type for variable sendText
+	
 	
 			element.clear();
 			element.sendKeys(text);
 
 		}
+
 
 /** 2-
  * Method checks if radio/checkbox is enabled and click radio button or check boxes 

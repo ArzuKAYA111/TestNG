@@ -18,8 +18,11 @@ public class ConfigsReader {
                                                          // Write logic part to read properties file and add try catch blocks for exceptions	
 try {
 	FileInputStream fis = new FileInputStream(filePath);
+	
 	prop = new Properties();
+	
 	prop.load(fis);
+	
     fis.close();
             
 	} catch (FileNotFoundException e) {

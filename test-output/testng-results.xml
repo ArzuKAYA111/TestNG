@@ -1,28 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="1" skipped="1">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-05-22T20:16:22 CDT" name="Default suite" finished-at="2020-05-22T20:16:30 CDT" duration-ms="8014">
+  <suite started-at="2020-05-26T23:08:47 CDT" name="Default suite" finished-at="2020-05-26T23:09:26 CDT" duration-ms="38692">
     <groups>
     </groups>
-    <test started-at="2020-05-22T20:16:22 CDT" name="Default test" finished-at="2020-05-22T20:16:30 CDT" duration-ms="8014">
-      <class name="Com.class02.AssertionDemo">
-        <test-method is-config="true" signature="openBrowserAndNavigate()[pri:0, instance:Com.class02.AssertionDemo@769e7ee8]" started-at="2020-05-22T20:16:22 CDT" name="openBrowserAndNavigate" finished-at="2020-05-22T20:16:29 CDT" duration-ms="7199" status="PASS">
+    <test started-at="2020-05-26T23:08:47 CDT" name="Default test" finished-at="2020-05-26T23:09:26 CDT" duration-ms="38692">
+      <class name="Com.class03.DataProviderDemo">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Com.class03.DataProviderDemo@1677d1]" started-at="2020-05-26T23:08:47 CDT" name="setUp" finished-at="2020-05-26T23:08:55 CDT" duration-ms="7929" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openBrowserAndNavigate -->
-        <test-method signature="titleValidation()[pri:0, instance:Com.class02.AssertionDemo@769e7ee8]" started-at="2020-05-22T20:16:29 CDT" name="titleValidation" finished-at="2020-05-22T20:16:29 CDT" duration-ms="22" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        </test-method> <!-- setUp -->
+        <test-method signature="login(java.lang.String, java.lang.String, int)[pri:0, instance:Com.class03.DataProviderDemo@1677d1]" started-at="2020-05-26T23:08:55 CDT" name="login" data-provider="getData" finished-at="2020-05-26T23:08:58 CDT" duration-ms="2380" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Hum@nhrm123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[23]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Com.class03.DataProviderDemo@1677d1]" started-at="2020-05-26T23:08:58 CDT" name="tearDown" finished-at="2020-05-26T23:08:58 CDT" duration-ms="706" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Com.class03.DataProviderDemo@1677d1]" started-at="2020-05-26T23:08:58 CDT" name="setUp" finished-at="2020-05-26T23:09:05 CDT" duration-ms="6445" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="login(java.lang.String, java.lang.String, int)[pri:0, instance:Com.class03.DataProviderDemo@1677d1]" started-at="2020-05-26T23:09:05 CDT" name="login" data-provider="getData" finished-at="2020-05-26T23:09:07 CDT" duration-ms="2364" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Syntax]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Syntax123!]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[25]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Com.class03.DataProviderDemo@1677d1]" started-at="2020-05-26T23:09:07 CDT" name="tearDown" finished-at="2020-05-26T23:09:08 CDT" duration-ms="697" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Com.class03.DataProviderDemo@1677d1]" started-at="2020-05-26T23:09:08 CDT" name="setUp" finished-at="2020-05-26T23:09:14 CDT" duration-ms="6368" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="login(java.lang.String, java.lang.String, int)[pri:0, instance:Com.class03.DataProviderDemo@1677d1]" started-at="2020-05-26T23:09:14 CDT" name="login" data-provider="getData" finished-at="2020-05-26T23:09:25 CDT" duration-ms="11001" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SyntaxUser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Syntax123!]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Title does not match expected [Human Management System!!!] but found [Human Management System]]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#welcome"}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'ARZU', ip: '192.168.1.206', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\beyha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57110}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 265e59de1d723fb80096155152979435
+*** Element info: {Using=id, value=welcome}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Title does not match expected [Human Management System!!!] but found [Human Management System]
-at org.testng.Assert.fail(Assert.java:97)
-at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:575)
-at Com.class02.AssertionDemo.titleValidation(AssertionDemo.java:36)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#welcome"}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'ARZU', ip: '192.168.1.206', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\beyha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57110}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 265e59de1d723fb80096155152979435
+*** Element info: {Using=id, value=welcome}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
+at Com.class03.DataProviderDemo.login(DataProviderDemo.java:19)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -53,47 +158,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- titleValidation -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:Com.class02.AssertionDemo@769e7ee8]" started-at="2020-05-22T20:16:29 CDT" name="quitBrowser" finished-at="2020-05-22T20:16:30 CDT" duration-ms="728" status="PASS">
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Com.class03.DataProviderDemo@1677d1]" started-at="2020-05-26T23:09:25 CDT" name="tearDown" finished-at="2020-05-26T23:09:26 CDT" duration-ms="738" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method signature="logoValidation()[pri:2, instance:Com.class02.AssertionDemo@769e7ee8]" started-at="2020-05-22T20:16:30 CDT" name="logoValidation" finished-at="2020-05-22T20:16:30 CDT" depends-on-methods="Com.class02.AssertionDemo.titleValidation" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method AssertionDemo.logoValidation()[pri:2, instance:Com.class02.AssertionDemo@769e7ee8] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method AssertionDemo.logoValidation()[pri:2, instance:Com.class02.AssertionDemo@769e7ee8] depends on not successfully finished methods
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
-at org.testng.TestRunner.privateRun(TestRunner.java:767)
-at org.testng.TestRunner.run(TestRunner.java:588)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
-at org.testng.TestNG.runSuites(TestNG.java:1066)
-at org.testng.TestNG.run(TestNG.java:1034)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoValidation -->
-      </class> <!-- Com.class02.AssertionDemo -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- Com.class03.DataProviderDemo -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
