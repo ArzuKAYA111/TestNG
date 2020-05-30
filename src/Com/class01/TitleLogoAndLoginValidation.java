@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 import Utils.CommonMethods;
 import Utils.ConfigsReader;
 
-public class TitleLogoLoginValidation extends CommonMethods{
+public class TitleLogoAndLoginValidation extends CommonMethods{
 	
 	//url=http://166.62.36.207/humanresources/symfony/web/index.php/auth/login
 	

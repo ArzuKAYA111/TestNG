@@ -39,4 +39,33 @@ public class LoginPageElements extends CommonMethods{// page foctory li olani (b
 		PageFactory.initElements(driver, this);
 	}
 	
+	//if we would be keeping elements as private 
+		//then we will need to create public getters and setters 
+		//so we can access page elements from test classes
+	
+	
+	//Setter
+	public void sendUsername(String usename) {
+		sendText(username, usename);
+	}
+	
+	
+	// Getter
+	
+	public WebElement getUsername() {
+		return username;
+	}
+	
+	
+	public void login(String usename , String pwd) {
+		
+		sendText(username ,usename);
+		sendText (password, pwd);
+		click(loginBtn);
+	}
+	
+	
+	
+	
+	
 }

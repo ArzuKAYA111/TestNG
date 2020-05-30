@@ -1,20 +1,19 @@
 package Com.class03;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-import org.junit.Assert;
 //import org.testng.annotations.AfterClass;
 //import org.testng.annotations.BeforeClass;
 //import org.testng.annotations.Test;
 
 public class GroupsDemo {
-
 	// alwaysRun attribute will make sure that this method will always execute
 	@BeforeClass(alwaysRun = true)
 	public void beforeClass() {
 		System.out.println("beforeClass");
 	}
-
-	@AfterClass(alwaysRun = true)
+@AfterClass(alwaysRun = true)
 	public void afterClass() {
 		System.out.println("afterClass");
 	}	
@@ -36,21 +35,14 @@ public void test2() {
 						// and decide if test passed or failed
 }
 
-
 @Test(groups="regression")
 public void test3() {
 	System.out.println("test 3");
 }
 
-
 @Test(groups= {"smoke","regression"})
 public void test4() {
 	System.out.println("test 4");
 }
-
-
-
-
-
 
 }

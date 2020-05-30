@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite class01]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="Com.class01.TitleLogoAndLoginValidation">
+        <methods>
+          <include name="quitBrowser"/>
+          <include name="tearDown"/>
+          <include name="openAndNavigate"/>
+          <include name="setUp"/>
+          <include name="validLogin"/>
+        </methods>
+      </class> <!-- Com.class01.TitleLogoAndLoginValidation -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite class01] -->

@@ -5,8 +5,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import Utils.BaseClass;
+import Utils.CommonMethods;
 
-public class AddEmployeePageElements {
+public class AddEmployeePageElements extends CommonMethods{
 	@FindBy(id="firstName")
 	public WebElement empfirstnme;
 	
@@ -30,6 +31,7 @@ public class AddEmployeePageElements {
 	
 	@FindBy(id="user_password")
 	public WebElement userpassword;
+	
 	@FindBy(id="re_password")
 	public WebElement reuserpassword;
 	
